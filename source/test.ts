@@ -1,8 +1,11 @@
+// external
 import { deepEqual } from 'assert-helpers'
 import kava from 'kava'
-import { list } from './index.js'
 
-kava.suite('@bevry/file', function (suite, test) {
+// local
+import list from './index.js'
+
+kava.suite('@bevry/fs-list', function (suite, test) {
 	test('works as expected', function (done) {
 		Promise.resolve()
 			.then(async function () {

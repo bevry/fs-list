@@ -5,12 +5,12 @@ import { versions } from 'process'
 const nodeVersion = String(versions.node || '0')
 
 // external
-import { accessible, R_OK } from '@bevry/fs-accessible'
+import accessible, { R_OK } from '@bevry/fs-accessible'
 import Errlop from 'errlop'
 import versionCompare from 'version-compare'
 
 /** List the entire contents of a directory. */
-export async function list(path: string): Promise<Array<string>> {
+export default async function list(path: string): Promise<Array<string>> {
 	// check accessible
 	try {
 		await accessible(path)

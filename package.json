@@ -1,6 +1,6 @@
 {
   "name": "@bevry/fs-list",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "List the entire contents of a directory.",
   "homepage": "https://github.com/bevry/fs-list",
   "license": "Artistic-2.0",
@@ -10,6 +10,7 @@
     "ecmascript",
     "es2016",
     "es2022",
+    "export-default",
     "file",
     "from",
     "node",
@@ -144,14 +145,14 @@
     }
   },
   "dependencies": {
-    "@bevry/fs-accessible": "^1.1.0",
+    "@bevry/fs-accessible": "^2.0.0",
     "editions": "^6.13.0",
     "errlop": "^7.2.0",
     "version-compare": "^3.2.0"
   },
   "devDependencies": {
     "@bevry/update-contributors": "^1.23.0",
-    "@types/node": "^20.9.0",
+    "@types/node": "^20.9.1",
     "@typescript-eslint/eslint-plugin": "^6.11.0",
     "@typescript-eslint/parser": "^6.11.0",
     "assert-helpers": "^11.4.0",

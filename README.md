@@ -43,8 +43,8 @@ List the entire contents of a directory.
 <a href="https://npmjs.com" title="npm is a package manager for javascript"><h3>npm</h3></a>
 <ul>
 <li>Install: <code>npm install --save @bevry/fs-list</code></li>
-<li>Import: <code>import * as pkg from ('@bevry/fs-list')</code></li>
-<li>Require: <code>const pkg = require('@bevry/fs-list')</code></li>
+<li>Import: <code>import pkg from ('@bevry/fs-list')</code></li>
+<li>Require: <code>const pkg = require('@bevry/fs-list').default</code></li>
 </ul>
 
 <h3><a href="https://editions.bevry.me" title="Editions are the best way to produce and consume packages you care about.">Editions</a></h3>

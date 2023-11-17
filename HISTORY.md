@@ -1,5 +1,9 @@
 # History
 
+## v2.0.0 2023 November 17
+
+-   Changed to a default export
+
 ## v1.0.1 2023 November 16
 
 -   Fixed bad metadata
