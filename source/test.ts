@@ -1,14 +1,15 @@
 // external
 import { deepEqual } from 'assert-helpers'
 import kava from 'kava'
+import promiseErrback from 'promise-errback'
 
 // local
 import list from './index.js'
 
 kava.suite('@bevry/fs-list', function (suite, test) {
 	test('works as expected', function (done) {
-		Promise.resolve()
-			.then(async function () {
+		promiseErrback(
+			Promise.resolve().then(async function () {
 				deepEqual(
 					await list('.github'),
 					[
@@ -19,9 +20,8 @@ kava.suite('@bevry/fs-list', function (suite, test) {
 					].sort(),
 					'reading worked fine'
 				)
-			})
-			.then(() => done())
-			.catch((err) => done(err))
-		// finally breaks early node support
+			}),
+			done
+		)
 	})
 })
