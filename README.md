@@ -41,14 +41,22 @@ List the entire contents of a directory.
 
 ### [npm](https://npmjs.com "npm is a package manager for javascript")
 
+#### Install Globally
+
+-   Install: `npm install --global @bevry/fs-list`
+-   Executable: `@bevry/fs-list`
+
+#### Install Locally
+
 -   Install: `npm install --save @bevry/fs-list`
+-   Executable: `npx @bevry/fs-list`
 -   Import: `import pkg from ('@bevry/fs-list')`
 -   Require: `const pkg = require('@bevry/fs-list').default`
 
 ### [Deno](https://deno.land "Deno is a secure runtime for JavaScript and TypeScript, it is an alternative for Node.js")
 
 ``` typescript
-import pkg from 'https://unpkg.com/@bevry/fs-list@^2.6.0/edition-deno/index.ts'
+import pkg from 'https://unpkg.com/@bevry/fs-list@^2.7.0/edition-deno/index.ts'
 ```
 ### [Editions](https://editions.bevry.me "Editions are the best way to produce and consume packages you care about.")
 

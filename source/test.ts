@@ -6,8 +6,9 @@ import promiseErrback from 'promise-errback'
 // local
 import list from './index.js'
 
+// tests
 kava.suite('@bevry/fs-list', function (suite, test) {
-	test('works as expected', function (done) {
+	test('.github works as expected', function (done) {
 		promiseErrback(
 			Promise.resolve().then(async function () {
 				deepEqual(
