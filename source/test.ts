@@ -1,3 +1,6 @@
+// builtin
+import { join } from 'path'
+
 // external
 import { deepEqual } from 'assert-helpers'
 import kava from 'kava'
@@ -17,7 +20,7 @@ kava.suite('@bevry/fs-list', function (suite, test) {
 						'dependabot.yml',
 						'FUNDING.yml',
 						'workflows',
-						'workflows/bevry.yml',
+						join('workflows', 'bevry.yml'), // windows compat
 					].sort(),
 					'reading worked fine'
 				)
